@@ -1,0 +1,59 @@
+{
+  "modmenu.descriptionTranslation.better-prison": "At least not worse.",
+
+  "text.autoconfig.better-prison.title": "BetterPrison",
+  "text.autoconfig.better-prison.option.modEnabled": "Mod enabled",
+  "text.autoconfig.better-prison.option.modEnabled.@Tooltip": "Toggle to on/off mod globally.",
+
+
+  "text.autoconfig.better-prison.option.globalSection": "Global",
+  "text.autoconfig.better-prison.option.globalSection.@Tooltip": "Settings that affect the entire Mineland.",
+
+  "text.autoconfig.better-prison.option.globalSection.chatSection": "Chat",
+  "text.autoconfig.better-prison.option.globalSection.chatSection.@Tooltip": "Settings that affect chat messages.",
+  "text.autoconfig.better-prison.option.globalSection.chatSection.messageSecretStorage": "Message about secret storage",
+  "text.autoconfig.better-prison.option.globalSection.chatSection.messageSecretStorage.@Tooltip": "Enable/disable the message \"There's something in the Secret Storage...\" and its sound.",
+  "text.autoconfig.better-prison.option.globalSection.chatSection.messageUnreadMail": "Message about unread mail",
+  "text.autoconfig.better-prison.option.globalSection.chatSection.messageUnreadMail.@Tooltip": "Enable/disable the message about unread mail (/mail).",
+  "text.autoconfig.better-prison.option.globalSection.chatSection.messageAsk": "Messages about questions",
+  "text.autoconfig.better-prison.option.globalSection.chatSection.messageAsk.@Tooltip": "Enable/disable messages related to questions (/asks).",
+  "text.autoconfig.better-prison.option.globalSection.chatSection.messageJoinLeave": "Login/logout messages",
+  "text.autoconfig.better-prison.option.globalSection.chatSection.messageJoinLeave.@Tooltip": "Enable/disable messages about the login/logout of all players (and you included).",
+  "text.autoconfig.better-prison.option.globalSection.chatSection.messageGuardOnJoin": "Spam captcha messages",
+  "text.autoconfig.better-prison.option.globalSection.chatSection.messageGuardOnJoin.@Tooltip": "Enable/disable spam messages when completing a captcha before entering the server.",
+
+  "text.autoconfig.better-prison.option.globalSection.guiSection": "Screens (GUI)",
+  "text.autoconfig.better-prison.option.globalSection.guiSection.@Tooltip": "Settings that affect screens (GUI).",
+  "text.autoconfig.better-prison.option.globalSection.guiSection.guiVote": "Voting screen",
+  "text.autoconfig.better-prison.option.globalSection.guiSection.guiVote.@Tooltip": "Enable/disable any possibility of opening the voting screen (/vote).",
+
+
+  "text.autoconfig.better-prison.option.prisonSection": "Prison",
+  "text.autoconfig.better-prison.option.prisonSection.@Tooltip": "Settings that affect Mineland Prison.",
+
+  "text.autoconfig.better-prison.option.prisonSection.renderSection": "Rendering",
+  "text.autoconfig.better-prison.option.prisonSection.renderSection.@Tooltip": "Settings that affect chunk rendering.",
+  "text.autoconfig.better-prison.option.prisonSection.renderSection.betterChunks": "Better chunks",
+  "text.autoconfig.better-prison.option.prisonSection.renderSection.betterChunks.@Tooltip[0]": "Enable/disable the mechanism for saving and loading chunks. It saves the loaded chunks to the",
+  "text.autoconfig.better-prison.option.prisonSection.renderSection.betterChunks.@Tooltip[1]": "\"prison_chunks\" folder and displays them when entering the Prison. Not for low-end computers.",
+
+  "text.autoconfig.better-prison.option.prisonSection.chatSection": "Chat",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.@Tooltip": "Settings that affect chat messages.",
+
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messageLevelDifference": "Message about level difference",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messageLevelDifference.@Tooltip": "Enable/disable message \"The level difference is too high. Killing is pointless!\"",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messageAttackSameFaction": "Message about attacking same faction",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messageAttackSameFaction.@Tooltip": "Enable/disable message \"You can not attack player from the same faction.\"",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messageBeaten": "Message about being beaten up",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messageBeaten.@Tooltip": "Enable/disable message \"You were severely beaten by the player %nickname%\"",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messageHugeDamage": "Message about huge damage",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messageHugeDamage.@Tooltip": "Enable/disable message \"You've taken a huge amount of damage but survived!\"",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messageResourcesLost": "Message about losing resources",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messageResourcesLost.@Tooltip": "Enable/disable message \"All of your resources have been lost.\"",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messagePvpOver": "Message about the end of PvP",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messagePvpOver.@Tooltip": "Enable/disable message \"Battle is over! Now you can leave the game, if you want.\"",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messageClear7Slot": "Message about clearing 7 slot",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messageClear7Slot.@Tooltip": "Enable/disable message \"Please clear seventh slot.\"",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messageBossDefeated": "Messages about defeated bosses",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messageBossDefeated.@Tooltip": "Enable/disable messages \"Boss %bossname% was defeated! Players Involved: %amount%\""
+}

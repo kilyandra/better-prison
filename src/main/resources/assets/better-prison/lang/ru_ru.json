@@ -1,0 +1,59 @@
+{
+  "modmenu.descriptionTranslation.better-prison": "Хотя бы не ухудшенный.",
+
+  "text.autoconfig.better-prison.title": "BetterPrison",
+  "text.autoconfig.better-prison.option.modEnabled": "Мод включен",
+  "text.autoconfig.better-prison.option.modEnabled.@Tooltip": "Кнопка для глобального включения/выключения мода.",
+
+
+  "text.autoconfig.better-prison.option.globalSection": "Глобальные",
+  "text.autoconfig.better-prison.option.globalSection.@Tooltip": "Настройки, которые влияют на весь Mineland.",
+
+  "text.autoconfig.better-prison.option.globalSection.chatSection": "Чат",
+  "text.autoconfig.better-prison.option.globalSection.chatSection.@Tooltip": "Настройки, которые влияют на сообщения в чате.",
+  "text.autoconfig.better-prison.option.globalSection.chatSection.messageSecretStorage": "Сообщение о секретном хранилище",
+  "text.autoconfig.better-prison.option.globalSection.chatSection.messageSecretStorage.@Tooltip": "Вкл/выкл сообщение \"В Секретном Хранилище что-то есть...\" и его звук.",
+  "text.autoconfig.better-prison.option.globalSection.chatSection.messageUnreadMail": "Сообщение о непрочитанных письмах",
+  "text.autoconfig.better-prison.option.globalSection.chatSection.messageUnreadMail.@Tooltip": "Вкл/выкл сообщение о непрочитанных письмах (/mail).",
+  "text.autoconfig.better-prison.option.globalSection.chatSection.messageAsk": "Сообщения, связанные с вопросами",
+  "text.autoconfig.better-prison.option.globalSection.chatSection.messageAsk.@Tooltip": "Вкл/выкл сообщения, связанные с вопросами (/asks).",
+  "text.autoconfig.better-prison.option.globalSection.chatSection.messageJoinLeave": "Входы/выходы игроков",
+  "text.autoconfig.better-prison.option.globalSection.chatSection.messageJoinLeave.@Tooltip": "Вкл/выкл сообщения о входах/выходах игроков (свои тоже).",
+  "text.autoconfig.better-prison.option.globalSection.chatSection.messageGuardOnJoin": "Спам сообщениями при прохождении капчи",
+  "text.autoconfig.better-prison.option.globalSection.chatSection.messageGuardOnJoin.@Tooltip": "Вкл/выкл спам сообщениями при прохождении капчи перед входом на сервер.",
+
+  "text.autoconfig.better-prison.option.globalSection.guiSection": "Экраны (GUI)",
+  "text.autoconfig.better-prison.option.globalSection.guiSection.@Tooltip": "Настройки, которые влияют на экраны (GUI).",
+  "text.autoconfig.better-prison.option.globalSection.guiSection.guiVote": "Экран голосований",
+  "text.autoconfig.better-prison.option.globalSection.guiSection.guiVote.@Tooltip": "Вкл/выкл любую возможность открыть экран голосований (/vote).",
+
+
+  "text.autoconfig.better-prison.option.prisonSection": "Prison",
+  "text.autoconfig.better-prison.option.prisonSection.@Tooltip": "Настройки, которые влияют на Mineland Prison.",
+
+  "text.autoconfig.better-prison.option.prisonSection.renderSection": "Прорисовка",
+  "text.autoconfig.better-prison.option.prisonSection.renderSection.@Tooltip": "Настройки, которые влияют на прорисовку чанков.",
+  "text.autoconfig.better-prison.option.prisonSection.renderSection.betterChunks": "Улучшенные чанки",
+  "text.autoconfig.better-prison.option.prisonSection.renderSection.betterChunks.@Tooltip[0]": "Вкл/выкл механизм сохранения и загрузки чанков. Он сохраняет чанки в папку",
+  "text.autoconfig.better-prison.option.prisonSection.renderSection.betterChunks.@Tooltip[1]": "\"prison_chunks\" и отображает их при заходе на режим. Не для слабых компьютеров.",
+
+  "text.autoconfig.better-prison.option.prisonSection.chatSection": "Чат",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.@Tooltip": "Настройки, которые влияют на сообщения в чате.",
+
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messageLevelDifference": "Сообщение о разнице уровней",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messageLevelDifference.@Tooltip": "Вкл/выкл сообщение \"Слишком большая разница уровней. Нет смысла убивать!\"",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messageAttackSameFaction": "Сообщение о атаке игрока своей фракции",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messageAttackSameFaction.@Tooltip": "Вкл/выкл сообщение \"Ты не можешь атаковать игрока своей фракции.\"",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messageBeaten": "Сообщение о избиении",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messageBeaten.@Tooltip": "Вкл/выкл сообщение \"Ты был сильно избит игроком %никнейм%\"",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messageHugeDamage": "Сообщение о сильном уроне",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messageHugeDamage.@Tooltip": "Вкл/выкл сообщение \"Ты получил сильный урон, но выжил!\"",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messageResourcesLost": "Сообщение о утраченных ресурсах",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messageResourcesLost.@Tooltip": "Вкл/выкл сообщение \"Все твои накопленные ресурсы утрачены.\"",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messagePvpOver": "Сообщение о выходе из боя",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messagePvpOver.@Tooltip": "Вкл/выкл сообщение \"Ты вышел из боя! Теперь можно спокойно покинуть игру, если это требуется.\"",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messageClear7Slot": "Сообщение о освобождении 7 слота",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messageClear7Slot.@Tooltip": "Вкл/выкл сообщение \"Освободи 7 слот для выдачи.\"",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messageBossDefeated": "Сообщения о поверженных боссах",
+  "text.autoconfig.better-prison.option.prisonSection.chatSection.messageBossDefeated.@Tooltip": "Вкл/выкл сообщение \"Босс %имя% был повержен! В битве участвовало %колво% игроков\""
+}
