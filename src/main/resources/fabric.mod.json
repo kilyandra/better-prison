@@ -1,6 +1,6 @@
 {
 	"schemaVersion": 1,
-	"id": "better-prison",
+	"id": "betterprison",
 	"version": "${version}",
 	"name": "Better Prison",
 	"description": "At least not worse.",
@@ -15,7 +15,7 @@
 		"sources": "https://github.com/Kilyandra2/better-prison"
 	},
 	"license": "MIT",
-	"icon": "assets/better-prison/icon.png",
+	"icon": "assets/betterprison/icon.png",
 	"environment": "client",
 	"entrypoints": {
 		"client": [
@@ -26,7 +26,7 @@
 		]
 	},
 	"mixins": [
-		"better-prison.mixins.json"
+		"betterprison.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.16.10",
