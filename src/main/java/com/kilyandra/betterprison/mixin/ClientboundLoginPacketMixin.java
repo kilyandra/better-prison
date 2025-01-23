@@ -7,9 +7,10 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import net.minecraft.network.protocol.game.ClientboundLoginPacket;
 
-import static com.kilyandra.betterprison.BetterPrison.onPrison;
-import static com.kilyandra.betterprison.Utils.isBetterChunksEnabled;
-import static com.kilyandra.betterprison.Utils.isModEnabled;
+import static com.kilyandra.betterprison.BetterPrison.LOGGER;
+import static com.kilyandra.betterprison.Utils.onPrison;
+import static com.kilyandra.betterprison.config.utils.ConfigGetters.modEnabled;
+import static com.kilyandra.betterprison.config.utils.ConfigGetters.betterChunks;
 
 
 @Mixin(ClientboundLoginPacket.class)
@@ -17,9 +18,8 @@ public abstract class ClientboundLoginPacketMixin {
 
     @Inject(method = "chunkRadius", at = @At(value = "HEAD"), cancellable = true)
     private void changeServerRenderDistance(CallbackInfoReturnable<Integer> cir){
-        if (!isModEnabled()) return;
-
-        if (onPrison && isBetterChunksEnabled()) cir.setReturnValue(128);
+        LOGGER.info("on prison: {}", onPrison());
+        if (modEnabled() && onPrison() && betterChunks()) cir.setReturnValue(128);
     }
 
 }

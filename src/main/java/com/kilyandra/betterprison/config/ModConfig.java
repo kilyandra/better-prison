@@ -3,20 +3,21 @@ package com.kilyandra.betterprison.config;
 import me.shedaniel.autoconfig.ConfigData;
 import me.shedaniel.autoconfig.annotation.Config;
 import me.shedaniel.autoconfig.annotation.ConfigEntry;
+import me.shedaniel.autoconfig.annotation.ConfigEntry.Category;
 
 
-@Config(name = "better-prison")
+@Config(name = "betterprison")
 @Config.Gui.Background(value = Config.Gui.Background.TRANSPARENT)
 public class ModConfig implements ConfigData {
 
-    @ConfigEntry.Gui.Tooltip()
-    public boolean modEnabled = true;
-
-    @ConfigEntry.Gui.Tooltip()
-    @ConfigEntry.Gui.CollapsibleObject(startExpanded = true)
+    @Category("globalSection")
+    @ConfigEntry.Gui.TransitiveObject
     public GlobalSection globalSection = new GlobalSection();
 
     public static class GlobalSection {
+        @ConfigEntry.Gui.Tooltip()
+        public boolean modEnabled = true;
+
         @ConfigEntry.Gui.Tooltip()
         @ConfigEntry.Gui.CollapsibleObject(startExpanded = true)
         public ChatSection chatSection = new ChatSection();
@@ -48,8 +49,8 @@ public class ModConfig implements ConfigData {
         }
     }
 
-    @ConfigEntry.Gui.Tooltip()
-    @ConfigEntry.Gui.CollapsibleObject(startExpanded = true)
+    @Category("prisonSection")
+    @ConfigEntry.Gui.TransitiveObject
     public PrisonSection prisonSection = new PrisonSection();
 
     public static class PrisonSection {
