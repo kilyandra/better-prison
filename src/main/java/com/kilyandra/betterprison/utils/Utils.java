@@ -1,5 +1,6 @@
-package com.kilyandra.betterprison;
+package com.kilyandra.betterprison.utils;
 
+import com.kilyandra.betterprison.BetterPrison;
 import net.minecraft.client.Minecraft;
 
 
@@ -17,24 +18,19 @@ public class Utils {
         return soundName.equals("minecraft:entity.experience_orb.pickup");
     }
 
-    @SuppressWarnings("BooleanMethodIsAlwaysInverted")
     public static boolean onNettyThread() {
         return Thread.currentThread().getName().startsWith("Netty Client IO");
     }
 
     public static boolean onPrison() {
-        return BetterPrison.CLIENT_MANAGER.onPrison;
+        return BetterPrison.CLIENT.onPrison;
     }
 
     public static void setOnPrison(boolean value) {
-        BetterPrison.CLIENT_MANAGER.onPrison = value;
+        BetterPrison.CLIENT.onPrison = value;
     }
 
     public static boolean onMineland() {
-        return BetterPrison.CLIENT_MANAGER.onMineland;
-    }
-
-    public static void setOnMineland(boolean value) {
-        BetterPrison.CLIENT_MANAGER.onMineland = value;
+        return BetterPrison.CLIENT.onMineland;
     }
 }

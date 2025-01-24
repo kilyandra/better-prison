@@ -1,4 +1,4 @@
-package com.kilyandra.betterprison.chunk;
+package com.kilyandra.betterprison.client.chunk;
 
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientPacketListener;
@@ -9,7 +9,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.ExecutorService;
 
 import static com.kilyandra.betterprison.BetterPrison.LOGGER;
-import static com.kilyandra.betterprison.chunk.ChunkUtils.*;
+import static com.kilyandra.betterprison.client.chunk.ChunkUtils.*;
 
 
 public class ChunkManager {

@@ -1,5 +1,7 @@
 package com.kilyandra.betterprison.config.utils;
 
+import net.minecraft.client.multiplayer.PlayerInfo;
+import net.minecraft.network.protocol.game.ClientboundPlayerInfoUpdatePacket.Entry;
 import net.minecraft.network.protocol.game.ClientboundSetObjectivePacket;
 
 public class ConfigUtils {
@@ -82,5 +84,11 @@ public class ConfigUtils {
     public static boolean isFastTpScreen(String containerName) {
         return containerName.equals("§4Быстрые телепортации") ||
                 containerName.equals("§4Fast teleportations");
+    }
+
+    public static boolean isNpcDisplayName(PlayerInfo playerInfo, Entry entry) {
+        return entry.displayName() != null &&
+                entry.displayName().getString().equals("NPC") &&
+                !playerInfo.getProfile().getName().equals("NPC");
     }
 }

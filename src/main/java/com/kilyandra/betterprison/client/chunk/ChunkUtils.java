@@ -1,4 +1,4 @@
-package com.kilyandra.betterprison.chunk;
+package com.kilyandra.betterprison.client.chunk;
 
 import net.minecraft.network.protocol.game.ClientboundLevelChunkWithLightPacket;
 import net.minecraft.network.FriendlyByteBuf;

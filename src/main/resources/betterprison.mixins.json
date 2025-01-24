@@ -2,11 +2,7 @@
   "required": true,
   "package": "com.kilyandra.betterprison.mixin",
   "compatibilityLevel": "JAVA_17",
-  "mixins": [
-    "ClientboundLoginPacketMixin",
-    "ClientboundSetChunkCacheRadiusPacketMixin",
-    "ClientPacketListenerMixin"
-  ],
+  "mixins": [],
   "injectors": {
     "defaultRequire": 1
   },

@@ -7,8 +7,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import net.minecraft.network.protocol.game.ClientboundSetChunkCacheRadiusPacket;
 
-import static com.kilyandra.betterprison.Utils.onPrison;
-import static com.kilyandra.betterprison.BetterPrison.LOGGER;
+import static com.kilyandra.betterprison.utils.Utils.onPrison;
 import static com.kilyandra.betterprison.config.utils.ConfigGetters.modEnabled;
 import static com.kilyandra.betterprison.config.utils.ConfigGetters.betterChunks;
 
@@ -18,8 +17,9 @@ public abstract class ClientboundSetChunkCacheRadiusPacketMixin {
 
     @Inject(method = "getRadius", at = @At(value = "HEAD"), cancellable = true)
     private void changeServerChunkCacheRadius(CallbackInfoReturnable<Integer> cir){
-        LOGGER.info("on prison: {}", onPrison());
-        if (modEnabled() && onPrison() && betterChunks()) cir.setReturnValue(128);
+        //Изменение дальности кеширования чанков для CONFIG.prisonSection.renderSection.betterChunks
+        if (modEnabled() && onPrison() && betterChunks())
+            cir.setReturnValue(128);
     }
 
 }

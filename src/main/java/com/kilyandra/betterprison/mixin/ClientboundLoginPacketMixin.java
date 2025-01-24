@@ -7,8 +7,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 import net.minecraft.network.protocol.game.ClientboundLoginPacket;
 
-import static com.kilyandra.betterprison.BetterPrison.LOGGER;
-import static com.kilyandra.betterprison.Utils.onPrison;
+import static com.kilyandra.betterprison.utils.Utils.onPrison;
 import static com.kilyandra.betterprison.config.utils.ConfigGetters.modEnabled;
 import static com.kilyandra.betterprison.config.utils.ConfigGetters.betterChunks;
 
@@ -18,8 +17,9 @@ public abstract class ClientboundLoginPacketMixin {
 
     @Inject(method = "chunkRadius", at = @At(value = "HEAD"), cancellable = true)
     private void changeServerRenderDistance(CallbackInfoReturnable<Integer> cir){
-        LOGGER.info("on prison: {}", onPrison());
-        if (modEnabled() && onPrison() && betterChunks()) cir.setReturnValue(128);
+        //Изменение дальности прогрузки чанков для CONFIG.prisonSection.renderSection.betterChunks
+        if (modEnabled() && onPrison() && betterChunks())
+            cir.setReturnValue(128);
     }
 
 }
